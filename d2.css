@@ -57,3 +57,84 @@ box-shadow: 0 5px 10px 3px #228B22;
 button:hover {
   width: 300px;
 }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+}
+
+/* Colors */
+:root {
+  --primary-color: #ee6e73;
+  --secondary-color: #455a64;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: var(--secondary-color);
+}
+
+.banner {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1rem;
+}
+
+/* Layout */
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Buttons */
+button {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ec407a;
+}
+
+/* Materialize CSS concepts */
+.nav-wrapper {
+  background-color: var(--primary-color);
+}
+
+.nav-wrapper a {
+  color: #fff;
+}
+
+
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+}
+
+.col {
+  flex: 1;
+  padding: 0 1rem;
+}
+
+@media (max-width: 600px) {
+  .col {
+    flex-basis: 100%;
+  }
+}
